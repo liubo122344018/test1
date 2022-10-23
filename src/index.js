@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import PageLayOut from './pageLayOut/PageLayOut';
-import LeftMenu from './components/leftMenu/LeftMenu'
+import LeftMenu from './components/leftMenu/LeftMenu';
+import  '../src/assets/static/iconfont.css';
 import './index.less'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
