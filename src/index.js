@@ -3,18 +3,24 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import PageLayOut from './pageLayOut/PageLayOut';
 import LeftMenu from './components/leftMenu/LeftMenu';
-import  '../src/assets/static/iconfont.css';
+import TopHeader from './components/topHeader/TopHeader';
+import { BrowserRouter } from 'react-router-dom'
+import '../src/assets/static/iconfont.css';
 import './index.less'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <div className = 'project-content'>
-    <LeftMenu />
-    <PageLayOut />
+  <BrowserRouter>
+    <div className='project-content'>
+      <TopHeader />
+      <div className='page-content'>
+        <LeftMenu />
+        <PageLayOut />
+      </div>
+
     </div>
-  </React.StrictMode>
-  
+  </BrowserRouter>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
